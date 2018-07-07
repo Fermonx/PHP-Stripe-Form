@@ -1,0 +1,209 @@
+body{
+	background-image: url("./country-quilt-dark.png");
+
+}
+
+
+
+/** CC FORM CONFIG **/
+
+.StripeElement {
+	background-color: #fbfbfb;
+	padding: 8px 16px;
+	border-radius: 1px;
+	border: 1px solid transparent;
+	box-shadow: 0 1px 3px 0 #e6ebf1;
+	-webkit-transition: box-shadow 150ms ease;
+	transition: box-shadow 150ms ease;
+}
+.StripeElement--focus {
+	box-shadow: 0 1px 3px 0 #999fa7;
+}
+.StripeElement--invalid {
+	border-color: #fa0013;
+}
+.StripeElement--webkit-autofill {
+	background-color: #c9c2c3 !important;
+}
+
+/** NON-CC FORM INPUT CONFIG**/
+
+.formInpt{
+	margin-bottom: 2em;
+	padding: 0.2em;
+	width: 100% !important;
+	text-align: center !important;
+}
+
+
+.paybutton{
+	margin-top: 1em;
+	border-radius: 0;
+}
+
+.block{
+	background-color: rgba(99, 99, 99, 0.22);
+	padding: 2em;
+	margin: 1em;
+	margin-top: 20vh;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.49);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.49);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.49);
+	width: 35vw;
+	min-width: 20em;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+hr.style11 {
+	height: 6px;
+	background: url('./hr-11.png') repeat-x 0 0;
+	border: 0;
+}
+
+
+.center{
+	text-align: left;
+}
+
+.center form{
+	display: inline-block;
+}
+
+.formtitle{
+	text-align: left !important;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/** RADIO BUTTONS CONFIG **/
+
+@keyframes click-wave {
+	0% {
+		height: 40px;
+		width: 40px;
+		opacity: 0.35;
+		position: relative;
+	}
+	100% {
+		height: 200px;
+		width: 200px;
+		margin-left: -80px;
+		margin-top: -80px;
+		opacity: 0;
+	}
+}
+
+.option-input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	position: relative;
+	top: 13.33333px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 40px;
+	width: 40px;
+	transition: all 0.15s ease-out 0s;
+	background: #cbd1d8;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 0.5rem;
+	outline: none;
+	position: relative;
+	z-index: 1000;
+}
+.option-input:hover {
+	background: #9faab7;
+}
+.option-input:checked {
+	background: #2252e8;
+}
+.option-input:checked::before {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	content: '✔';
+	display: inline-block;
+	font-size: 26.66667px;
+	text-align: center;
+	line-height: 45px;
+}
+.option-input:checked::after {
+	-webkit-animation: click-wave 0.40s;
+	-moz-animation: click-wave 0.40s;
+	animation: click-wave 0.40s;
+	background: #2252e8;
+	content: '';
+	display: block;
+	position: relative;
+	z-index: 100;
+}
+.option-input.radio {
+	border-radius: 50%;
+}
+.option-input.radio::after {
+	border-radius: 50%;
+}
+
+input[type="text"]{
+	font: 15px/24px 'Muli', sans-serif;
+	color: #333; width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+
+:focus{
+	outline: none;
+}
+
+.col-3{
+	float: left;
+	width: 27.33%;
+	margin: 40px 3%;
+	position: relative;
+}
+
+/* necessary to give position: relative to parent. */
+input[type="text"]{
+	font: 15px/24px "Lato", Arial, sans-serif;
+	text-align: right;
+	color: white;
+	width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+
+
+.labelEffect{
+	border: 0;
+	padding: 4px 0;
+	border-bottom: 1px solid #ccc;
+	background-color: transparent;
+}
+
+
+.labelEffect ~ label{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 9px;
+	color: #aaa;
+	transition: 0.3s;
+	z-index: -1;
+	letter-spacing: 0.5px;
+}
+
+.labelEffect:focus ~ label, .has-content.labelEffect ~ label{
+	top: -16px;
+	font-size: 16px;
+	color: #2557fd;
+	transition: 0.3s;
+}
